@@ -3,33 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AndradeCyberTec | Soluções em TI</title>
+    <title>AndradeCyberTec | Soluções em TI & Ofertas Locais</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .pulse-animation { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+    </style>
 </head>
 <body class="bg-slate-900 text-white font-sans">
-    <nav class="p-6 flex justify-between items-center border-b border-slate-800">
+
+    <nav class="p-6 flex justify-between items-center border-b border-slate-800 bg-slate-900/80 backdrop-blur-md sticky top-0 z-50">
         <h1 class="text-2xl font-bold text-blue-500">AndradeCyberTec</h1>
-        <a href="https://wa.me/55SEUNUMERO" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Contato</a>
+        <a href="https://chat.whatsapp.com/LqCTiGvohbL5hkGODxO2yC" 
+           class="flex items-center gap-2 border border-blue-500 hover:bg-blue-500/10 px-4 py-2 rounded-lg transition text-sm font-bold text-blue-400">
+            Acessar Canal
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+        </a>
     </nav>
     
-    <main class="max-w-4xl mx-auto mt-20 text-center px-4">
+    <main class="max-w-4xl mx-auto mt-16 text-center px-4">
         <h2 class="text-5xl font-extrabold mb-6">Infraestrutura e Suporte de TI com Confiança</h2>
-        <p class="text-slate-400 text-xl mb-10">Suporte técnico, redes, segurança e consultoria para o seu negócio não parar.</p>
+        <p class="text-slate-400 text-xl mb-10">Suporte técnico, redes e agora o portal oficial de ofertas da nossa cidade.</p>
         
-        <div class="grid md:grid-cols-3 gap-6 text-left">
-            <div class="p-6 bg-slate-800 rounded-xl">
+        <div class="mb-20">
+            <a href="https://chat.whatsapp.com/LqCTiGvohbL5hkGODxO2yC" 
+               class="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-extrabold py-5 px-10 rounded-2xl transition-all transform hover:scale-105 shadow-2xl shadow-green-900/20">
+                <span class="relative flex h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+                </span>
+                RECEBER OFERTAS NO WHATSAPP 📲
+            </a>
+            <p class="text-slate-500 text-sm mt-4 italic font-medium">Participe do grupo oficial de ofertas e serviços da nossa cidade.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 text-left mb-20">
+            <div class="p-6 bg-slate-800 rounded-xl border border-slate-700">
                 <h3 class="font-bold text-blue-400 mb-2">Suporte Técnico</h3>
                 <p class="text-sm text-slate-300">Manutenção preventiva e corretiva de hardware e software.</p>
             </div>
-            <div class="p-6 bg-slate-800 rounded-xl">
+            <div class="p-6 bg-slate-800 rounded-xl border border-slate-700">
                 <h3 class="font-bold text-blue-400 mb-2">Redes & Wi-Fi</h3>
                 <p class="text-sm text-slate-300">Configuração de roteadores, switches e cabeamento estruturado.</p>
             </div>
-            <div class="p-6 bg-slate-800 rounded-xl">
+            <div class="p-6 bg-slate-800 rounded-xl border border-slate-700">
                 <h3 class="font-bold text-blue-400 mb-2">Segurança</h3>
                 <p class="text-sm text-slate-300">Remoção de vírus, backup em nuvem e proteção de dados.</p>
             </div>
         </div>
+
+        <section class="text-left border-t border-slate-800 pt-16">
+            <h2 class="text-3xl font-bold mb-8 text-center text-blue-500">Ofertas Recentes</h2>
+            <div id="container-ofertas" class="grid md:grid-cols-2 gap-4">
+                <div class="p-4 bg-slate-800/50 border-l-4 border-green-500 rounded-lg">
+                    <span class="text-[10px] bg-green-500/20 text-green-400 px-2 py-1 rounded uppercase font-bold">Novo</span>
+                    <h4 class="font-bold text-white mt-2">Título da Oferta Local</h4>
+                    <p class="text-slate-400 text-sm">Preço e detalhes da promoção enviada pelo lojista.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="mt-20 py-10 border-t border-slate-800 text-center text-slate-500 text-sm">
@@ -37,17 +71,3 @@
     </footer>
 </body>
 </html>
-<a href="https://chat.whatsapp.com/LqCTiGvohbL5hkGODxO2yC" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition font-bold flex items-center gap-2">
-    <span class="relative flex h-3 w-3">
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
-    </span>
-    Entrar na Comunidade
-</a>
-
-<div class="mt-8">
-    <a href="https://chat.whatsapp.com/LqCTiGvohbL5hkGODxO2yC" class="inline-block bg-white text-slate-900 font-extrabold py-4 px-8 rounded-2xl hover:bg-blue-500 hover:text-white transition-all transform hover:scale-105 shadow-xl">
-        RECEBER OFERTAS NO WHATSAPP 📲
-    </a>
-    <p class="text-slate-500 text-sm mt-3 italic">Participe do grupo oficial de ofertas e serviços da nossa cidade.</p>
-</div>
