@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AndradeCyberTec | Soluções em TI & Ofertas Locais</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .pulse-animation { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
-    </style>
 </head>
 <body class="bg-slate-900 text-white font-sans">
 
     <nav class="p-6 flex justify-between items-center border-b border-slate-800 bg-slate-900/80 backdrop-blur-md sticky top-0 z-50">
-        <h1 class="text-2xl font-bold text-blue-500">AndradeCyberTec</h1>
-        <a href="https://chat.whatsapp.com/LqCTiGvohbL5hkGODxO2yC" 
-           class="flex items-center gap-2 border border-blue-500 hover:bg-blue-500/10 px-4 py-2 rounded-lg transition text-sm font-bold text-blue-400">
+        <h1 class="text-2xl font-bold text-blue-500 tracking-tighter">AndradeCyberTec</h1>
+        <a href="https://whatsapp.com/channel/0029VbBvtKX3rZZaSsImmy3Z" 
+           target="_blank"
+           class="flex items-center gap-2 bg-[#25D366]/10 border border-[#25D366]/50 hover:bg-[#25D366] hover:text-white px-4 py-2 rounded-lg transition-all duration-300 text-sm font-bold text-[#25D366]">
             Acessar Canal
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -29,38 +26,43 @@
         
         <div class="mb-20">
             <a href="https://chat.whatsapp.com/LqCTiGvohbL5hkGODxO2yC" 
-               class="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-extrabold py-5 px-10 rounded-2xl transition-all transform hover:scale-105 shadow-2xl shadow-green-900/20">
+               target="_blank"
+               class="inline-flex items-center gap-3 bg-white text-slate-900 font-extrabold py-5 px-10 rounded-2xl transition-all transform hover:scale-105 shadow-2xl hover:bg-blue-500 hover:text-white group">
                 <span class="relative flex h-3 w-3">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
                 </span>
-                RECEBER OFERTAS NO WHATSAPP 📲
+                ENTRAR NA COMUNIDADE 📲
             </a>
-            <p class="text-slate-500 text-sm mt-4 italic font-medium">Participe do grupo oficial de ofertas e serviços da nossa cidade.</p>
+            <p class="text-slate-500 text-sm mt-4 italic font-medium">Participe dos grupos de indicações e serviços locais.</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6 text-left mb-20">
-            <div class="p-6 bg-slate-800 rounded-xl border border-slate-700">
+            <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 hover:border-blue-500/50 transition shadow-lg">
                 <h3 class="font-bold text-blue-400 mb-2">Suporte Técnico</h3>
                 <p class="text-sm text-slate-300">Manutenção preventiva e corretiva de hardware e software.</p>
             </div>
-            <div class="p-6 bg-slate-800 rounded-xl border border-slate-700">
+            <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 hover:border-blue-500/50 transition shadow-lg">
                 <h3 class="font-bold text-blue-400 mb-2">Redes & Wi-Fi</h3>
                 <p class="text-sm text-slate-300">Configuração de roteadores, switches e cabeamento estruturado.</p>
             </div>
-            <div class="p-6 bg-slate-800 rounded-xl border border-slate-700">
+            <div class="p-6 bg-slate-800 rounded-xl border border-slate-700 hover:border-blue-500/50 transition shadow-lg">
                 <h3 class="font-bold text-blue-400 mb-2">Segurança</h3>
                 <p class="text-sm text-slate-300">Remoção de vírus, backup em nuvem e proteção de dados.</p>
             </div>
         </div>
 
         <section class="text-left border-t border-slate-800 pt-16">
-            <h2 class="text-3xl font-bold mb-8 text-center text-blue-500">Ofertas Recentes</h2>
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-blue-500">Ofertas Recentes</h2>
+                <span class="bg-blue-500/10 text-blue-400 text-xs px-3 py-1 rounded-full border border-blue-500/20">Atualizado via IA</span>
+            </div>
             <div id="container-ofertas" class="grid md:grid-cols-2 gap-4">
-                <div class="p-4 bg-slate-800/50 border-l-4 border-green-500 rounded-lg">
-                    <span class="text-[10px] bg-green-500/20 text-green-400 px-2 py-1 rounded uppercase font-bold">Novo</span>
-                    <h4 class="font-bold text-white mt-2">Título da Oferta Local</h4>
-                    <p class="text-slate-400 text-sm">Preço e detalhes da promoção enviada pelo lojista.</p>
+                <div class="p-5 bg-slate-800/40 border-l-4 border-green-500 rounded-r-lg">
+                    <span class="text-[10px] bg-green-500/20 text-green-400 px-2 py-1 rounded uppercase font-bold tracking-widest">Destaque</span>
+                    <h4 class="font-bold text-white mt-2 text-lg">Promoção Exemplo</h4>
+                    <p class="text-slate-400 text-sm mb-3">Esta é uma demonstração de como as ofertas aparecerão aqui.</p>
+                    <a href="https://chat.whatsapp.com/LqCTiGvohbL5hkGODxO2yC" class="text-xs text-blue-400 hover:underline">Ver detalhes no grupo →</a>
                 </div>
             </div>
         </section>
